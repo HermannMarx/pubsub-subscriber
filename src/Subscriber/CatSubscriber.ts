@@ -9,7 +9,7 @@ export class CatSubscriber {
   constructor() {
     this.pubSub = new PubSub();
     this.subscription = this.pubSub.subscription(
-      'projects/terraform-test-368613/subscriptions/terraform_subscription_123',
+      'projects/terraform-test-368613/subscriptions/cat_subscription',
     );
     this.subscription.on('message', (message) => {
       try {
